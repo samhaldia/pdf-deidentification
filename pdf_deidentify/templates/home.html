@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+	{% block content %}
+		<div  id="banner" class="col-sm-12">
+				<h1>Web Based Tool for De-Identification</h1>
+				<p>De-Identification tool to minimize privacy risk associated with publishing information.</p>
+			<div class="avcontainer">
+				<div class="avatar1">
+					<a href="list">
+						<p>Click to De-Identify PDF</p><img src="{% static 'images/pdf-icon.png' %}" alt="Skytsunami" />
+					</a>
+				</div>
+				<!--<div class="avatar2">
+					<a href="/">
+						<p>Click to De-Identify Image</p><img src="{% static 'images/image-icon.png' %}" alt="Skytsunami" />
+					</a>
+				</div>-->
+			</div>
+		</div>
+	{% endblock %}

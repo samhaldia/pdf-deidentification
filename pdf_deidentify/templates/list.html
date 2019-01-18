@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+	{% block title %}Sign Up{% endblock %}
+	{% block content %}
+	<div class="pdfcontainer container">
+		<p><h2>PDF De-Identification Form</h2></p>
+        <form action=" " method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+			{{ form|crispy }}
+			<button type="submit" class="btn btn-success">De-Identify</button>
+        </form>
+	</div>
+	<!-- Display Only The Last De-Identified PDF For Download or View-->
+	<div class="pdfcontainer container">
+		<h4> De-Identified Documents To Download or View:</h4>
+        {% if procdocument %}
+		
+            <ul>
+                
+                    <li><a href="{{ procdocument.procdocfile.url }}">{{ procdocument.procdocfile.name }}</a></li>
+                
+            </ul>
+        {% else %}
+            <p>No De-Identified Documents to Display.</p>
+        {% endif %}
+	</div>
+	{% endblock %}

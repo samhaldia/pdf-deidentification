@@ -52,6 +52,6 @@ Steps to Setup Environment in Windows:
 	
 Linux Machine:
 	
-	* Steps will Be Same to Build This Web based tool,except the Commands to install Anaconda in Linux Machine and Others if any.
+* Steps will Be Same to Build This Web based tool,except the Commands to install Anaconda in Linux Machine and Others if any.
 	
 	

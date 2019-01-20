@@ -17,6 +17,7 @@ This Repository Used Following :
 	defusedxml
 
 	pdfminer.six # Read For More Info https://pdfminer-docs.readthedocs.io/pdfminer_index.html
+	
 
 	chardet
 			

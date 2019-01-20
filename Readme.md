@@ -15,10 +15,11 @@ This Repository Used Following :
 	pdfrw>=0.4
 
 	defusedxml
-
-	pdfminer.six # Read For More Info https://pdfminer-docs.readthedocs.io/pdfminer_index.html
 	
-
+	# Read For More Info https://pdfminer-docs.readthedocs.io/pdfminer_index.html
+	
+	pdfminer.six 
+	
 	chardet
 			
 	django-crispy-forms 

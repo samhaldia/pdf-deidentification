@@ -1,1 +1,1 @@
-web: gunicorn de_identify.wsgi --log-file -
+web: gunicorn de_identify.wsgi
